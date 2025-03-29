@@ -1,7 +1,5 @@
 'use strict'
 
-const { log } = console;
-
 const min = 1;
 const max = 20;
 const guesses = 5;
@@ -76,14 +74,12 @@ resetBtn.addEventListener('click', () => {
     input.removeAttribute('readonly');
     guessesRemaining = guesses;
     number = getRandomNumber(min, max);
-    log(number);
     feedback.innerText = `Enter a number between ${min} and ${max}`;
     guessDisplay.innerText = `${guessesRemaining} guesses remaining`;
 });
 
 window.addEventListener('load', () => {
     number = getRandomNumber(min, max);
-    log(number);
     feedback.innerText = `Enter a number between ${min} and ${max}`;
     guessDisplay.innerText = `${guessesRemaining} guesses remaining`;
     input.focus();
