@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Connor Hall">
+        <meta name="description" content="Guessing game">
+        <meta name="keywords" content="web development, html, css, winnipeg, Canada">
+        <title>Guessing Game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script src="./assets/js/app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="grid-center">
+                <h1>Guessing Game</h1>
+                <h2 class="feedback"></h2> <!--Automatically filled on load-->
+                <p class="guess-display"></p>
+
+                <input
+                    type="text"
+                    class="player-input"
+                    name="input"
+                >
+
+                <button class="guess">Guess</button>
+                <button class="hide reset">Reset</button>
+            </div>
+        </main>
+    </body>
+</html>
